@@ -8,12 +8,12 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 .
 "Now serving 20."
 */
-var text = "";
+var ticketGen = "";
 var i;
 for(i = 1; i < 21; i++)
-	text += "Now serving " + i + ".";
+	ticketGen += "Now serving " + i + ".";
 
-console.log(text);
+console.log(ticketGen);
 
 /* 2) Pop Charts
 Write a for-loop that will iterate through the topFive array below and console.log the following message:
@@ -25,7 +25,13 @@ This week's chart buster is: '24K Magic.'
 */
 
 var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K Magic"];
+var i, len;
+var popCharts = [];
+for (i = 0, len = topFive.length, popCharts = ""; i < len; i++){
+	popCharts += "This week's chart buster is: " + topFive[i] + ".";
+}
 
+console.log(popCharts);
 
 /* 3) Dead Presidents
 Declare a variable named `presidents` and assign it to an array containing the following Presidents: Washington, Adams, Jefferson, Madison and Monroe.
