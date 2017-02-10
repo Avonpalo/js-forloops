@@ -52,7 +52,14 @@ This function will iterate through the person parameter and console.log the foll
 
 "President person was a great leader."
 */
+var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe"];
+var deadPresidents = [];
+var i, len;
+for (i = 0, len = presidents.length, deadPresidents = ""; i < len; i++){
+	deadPresidents += "The value at " + i + " is " + presidents[i] + ".";
+}
 
+console.log(deadPresidents);
 
 /* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
